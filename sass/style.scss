@@ -1,0 +1,66 @@
+/* Color Palette */
+$white: #FFFFFF;
+$mint: #B9DCD2;
+$dark-mint: #21C8B8;
+$light-grey: #ECECEC;
+$dark-grey: #757676;
+$navy: #454D64;
+$black: #3C3C3C;
+
+/* Fonts */
+@font-face {
+    font-family: "Damion";
+    src: url(../fonts/Damion_Regular.ttf);
+}
+@font-face {
+    font-family: "Marmelad";
+    src: url(../fonts/Marmelad_Regular.ttf);
+}
+
+body {
+	font-family: "Marmelad";
+	font-size: 1em;
+}
+
+span.accent_font {
+    font-family: "Damion";
+    font-size: 1.5em;
+}
+
+header {
+	background: url(../images/hero_bg_raw.jpg) no-repeat center 20%;
+	background-size: cover;
+
+	> .container {
+		background-color: rgba($black, 0.4);
+		background-image: url(../images/overlay.png);
+		background-repeat: repeat;
+		padding: 1em;
+	}
+	#logo {
+		margin: 10em auto 0;
+		display: block;
+	}
+	.headline {
+		color: $white;
+		text-align: center;
+	}
+}
+
+.center {
+	display: table;
+	margin: 0 auto;
+}
+
+.button {
+	display: inline-block;
+	height: 40px;
+	width: 135px;
+	margin: 0.5em;
+	&.apple {
+		background-image: url(../images/apple_download_xs.png);
+	}
+	&.google {
+		background-image: url(../images/google_download_xs.png);
+	}
+}
