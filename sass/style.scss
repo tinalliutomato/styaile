@@ -22,6 +22,9 @@ $black: #3C3C3C;
 	.copy {
 		text-align: center;
 	}
+	footer {
+		text-align: center;
+	}
 }
 
 body {
@@ -29,7 +32,11 @@ body {
 	font-size: 1em;
 }
 
-span.accent_font {
+h1 {
+	text-align: center;
+}
+
+.accent_font {
     font-family: "Damion";
 }
 
@@ -78,7 +85,7 @@ header {
 	background-image: url(../images/play_xs.png);
 }
 
-main > section {
+section {
 	padding: 3em 0;
 	border-bottom: 1px solid $light-grey;
 }
@@ -118,9 +125,10 @@ main > section {
 }
 
 .testimonial_card {
-	width: 300px;
+	width: 350px;
 	border: 1px solid $light-grey;
 	padding: 1em;
+	margin-bottom: 1em;
 	.top {
 		display: block;
 		width: 100%;
@@ -146,7 +154,22 @@ main > section {
 	}
 	.review {
 		margin-top: 0.5em;
-		font-size: 1.25em;
+		font-size: 1.35em;
+	}
+}
+
+footer {
+	background: url(../images/hero_bg_raw.jpg) no-repeat center 70%;
+	background-size: cover;
+	color: $white;
+	.overlay {
+		background-color: rgba($black, 0.4);
+		background-image: url(../images/overlay.png);
+		background-repeat: repeat;
+		padding: 1em;
+	}
+	.top_spacer {
+		margin-top: 5em;
 	}
 }
 

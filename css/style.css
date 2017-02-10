@@ -9,12 +9,18 @@
 /* Responsive Layout */
 @media (max-width: 768px) {
   .copy {
+    text-align: center; }
+
+  footer {
     text-align: center; } }
 body {
   font-family: "Marmelad";
   font-size: 1em; }
 
-span.accent_font {
+h1 {
+  text-align: center; }
+
+.accent_font {
   font-family: "Damion"; }
 
 header {
@@ -52,7 +58,7 @@ header {
   height: 62px;
   background-image: url(../images/play_xs.png); }
 
-main > section {
+section {
   padding: 3em 0;
   border-bottom: 1px solid #ECECEC; }
 
@@ -85,9 +91,10 @@ main > section {
     color: #3C3C3C; }
 
 .testimonial_card {
-  width: 300px;
+  width: 350px;
   border: 1px solid #ECECEC;
-  padding: 1em; }
+  padding: 1em;
+  margin-bottom: 1em; }
   .testimonial_card .top {
     display: block;
     width: 100%; }
@@ -108,6 +115,18 @@ main > section {
       color: #21C8B8; }
   .testimonial_card .review {
     margin-top: 0.5em;
-    font-size: 1.25em; }
+    font-size: 1.35em; }
+
+footer {
+  background: url(../images/hero_bg_raw.jpg) no-repeat center 70%;
+  background-size: cover;
+  color: #FFFFFF; }
+  footer .overlay {
+    background-color: rgba(60, 60, 60, 0.4);
+    background-image: url(../images/overlay.png);
+    background-repeat: repeat;
+    padding: 1em; }
+  footer .top_spacer {
+    margin-top: 5em; }
 
 /*# sourceMappingURL=style.css.map */
