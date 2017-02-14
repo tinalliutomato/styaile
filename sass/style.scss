@@ -17,22 +17,6 @@ $black: #3C3C3C;
     src: url(../fonts/Marmelad_Regular.ttf);
 }
 
-/* Responsive Layout */
-@media (max-width: 768px) {
-	.copy {
-		text-align: center;
-	}
-	.news {
-		.news_logo {
-			display: block;
-			margin: 2em auto !important;
-		}
-	}
-	footer {
-		text-align: center;
-	}
-}
-
 body {
 	font-family: "Marmelad";
 	font-size: 1em;
@@ -133,8 +117,15 @@ section {
 	}
 }
 
-.testimonial_card {
+.testimonials .testimonial_card{
+	width: auto;
+}
+
+.benefits .testimonial_card {
 	width: 350px;
+}
+
+.testimonial_card {
 	border: 1px solid $light-grey;
 	padding: 1em;
 	margin-bottom: 1em;
@@ -191,7 +182,14 @@ footer {
 	.top_spacer {
 		margin-top: 5em;
 	}
+	i.fa {
+		font-size: 4em;
+		letter-spacing: 0.25em;
+		opacity: 0.7;
+	}
 }
+
+@import 'responsive';
 
 
 
