@@ -11,6 +11,10 @@
   .copy {
     text-align: center; }
 
+  .news .news_logo {
+    display: block;
+    margin: 2em auto !important; }
+
   footer {
     text-align: center; } }
 body {
@@ -116,6 +120,15 @@ section {
   .testimonial_card .review {
     margin-top: 0.5em;
     font-size: 1.35em; }
+
+.news .logos {
+  text-align: center; }
+.news .news_logo {
+  margin: 1em 1.25em;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  opacity: 0.5; }
 
 footer {
   background: url(../images/hero_bg_raw.jpg) no-repeat center 70%;
