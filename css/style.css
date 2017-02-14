@@ -47,20 +47,21 @@ header {
 
 .button {
   display: inline-block;
-  height: 40px;
+  height: 50px;
   width: 135px;
   margin: 0.5em; }
-  .button.apple {
-    background-image: url(../images/apple_download_xs.png); }
-  .button.google {
-    background-image: url(../images/google_download_xs.png); }
+  .button img {
+    width: 100%;
+    height: 100%; }
 
 #play_video {
   display: block;
-  margin: 2em auto 0;
+  margin: 2em auto 1em;
   width: 62px;
-  height: 62px;
-  background-image: url(../images/play_xs.png); }
+  height: 62px; }
+  #play_video img {
+    width: 100%;
+    height: 100%; }
 
 section {
   padding: 3em 0;
