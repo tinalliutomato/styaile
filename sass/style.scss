@@ -47,11 +47,13 @@ header {
 	#logo {
 		margin: 10em auto 0;
 		display: block;
+		height: 12vh;
+		margin-bottom: 2vh;
 	}
 	.headline {
 		margin-bottom: 10vh;
-		font-size: 1.25em;
-		line-height: 1.25;
+		font-size: 1.75em;
+		line-height: 1;
 	}
 	.accent_font {
 		font-size: 1.75em;
@@ -107,16 +109,19 @@ section {
 	.em {
 		width: 3em;
 		height: 3em;
-		margin: 0 0.5em;
+		margin: 0 1em;
+	}
+	.em:first-of-type {
+		margin-left: 0;
 	}
 	.headline {
 		margin-top: 1em;
-		font-size: 2em;
+		font-size: 2.5em;
+		line-height: 1;
 		color: $dark-grey;
 	}
 	.accent_font {
 		font-size: 1.6em;
-    	line-height: 1;
 		color: $black;
 	}
 }
@@ -126,7 +131,7 @@ section {
 }
 
 .benefits .testimonial_card {
-	width: 350px;
+	max-width: 350px;
 }
 
 .testimonial_card {
