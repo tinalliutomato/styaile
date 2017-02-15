@@ -2,8 +2,8 @@
 
 /* Extra-small devices */
 @media (max-width: 767px) {
-	.copy {
-		text-align: center;
+	p.video {
+		font-size: 1em;
 	}
 	.news {
 		.news_logo {
@@ -39,6 +39,7 @@
 		padding: 0;
 	}
 	.copy {
+		text-align: center;
 		margin-top: 5vh;
 		margin-bottom: 5vh;
 		.headline {
@@ -52,9 +53,14 @@
 
 /* Small devices */
 @media (min-width: 768px) and (max-width: 991px) {
-	header {
-		.headline {
-			
+	footer {
+		text-align: center;
+		.download_rating {
+			display: inline-block;
+			.button, .rating {
+				display: block;
+				vertical-align: middle;
+			}
 		}
 	}
 	.copy {
@@ -67,11 +73,6 @@
 
 /* Medium-size devices */
 @media (min-width: 992px) and (max-width: 1199px) {
-	header {
-		.headline {
-			
-		}
-	}
 	footer {
 		#footer_main {
 			height: calc(500px - 2em);
@@ -86,9 +87,5 @@
 
 /* Large devices */
 @media (min-width: 1200px) {
-	header {
-		.headline {
-			
-		}
-	}
+	
 }

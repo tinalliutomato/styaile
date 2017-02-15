@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<title>Styaile | Get your #ootd ideas</title>
+	<title>Styaile | Daily Outfit Ideas</title>
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/normalize.css">
@@ -29,10 +29,10 @@
 	based on the <span class="accent_font">weather</span> , your <span class="accent_font">clothes</span> ,  and <span class="accent_font">lifestyle</span></p>
 		</div>
 		<div class="row">
-			<a class="button">
+			<a href="" class="button">
 				<img src="images/apple_download.svg">
 			</a>
-			<a class="button">
+			<a href="" class="button">
 				<img src="images/google_download.svg">
 			</a>
 		</div>
@@ -44,23 +44,21 @@
 			<button id="play_video" onclick="playPause()">
 				<img src="images/play.svg">
 			</button>
+
 			<!-- Play Video Full Screen -->
 			<script language="javascript">
 				var myVideo = document.getElementById('myvideo'); 
-
 				function playPause() { 
-				    //if (myVideo.paused) {
-				    	myVideo.play(); 
-						if (myVideo.requestFullscreen) {
-					      myVideo.requestFullscreen();
-					    } else if (myVideo.mozRequestFullScreen) {
-					      myVideo.mozRequestFullScreen();
-					    } else if (myVideo.webkitRequestFullscreen) {
-					      myVideo.webkitRequestFullscreen();
-					    }
-				    /*} else {
-					 	myVideo.pause(); 
-					}*/
+			    	myVideo.play(); 
+					if (myVideo.requestFullscreen) {
+				      myVideo.requestFullscreen();
+				    } else if (myVideo.mozRequestFullScreen) {
+				      myVideo.mozRequestFullScreen();
+				    } else if (myVideo.webkitRequestFullscreen) {
+				      myVideo.webkitRequestFullscreen();
+				    } else {
+				    	myVideo.pause();
+				    }
 				}
 			</script>
 			<p class="video">Watch the video to<br>find out how it works</p>
@@ -226,9 +224,9 @@
 						<h2 class="accent_font top_spacer">Share the love</h2>
 						<div class="row">
 							<div class="container-fluid">
-								<i class="fa fa-facebook-square"></i>
-								<i class="fa fa-twitter-square"></i>
-								<i class="fa fa-instagram"></i>
+								<a href="#"><i class="fa fa-facebook-square"></i></a>
+								<a href="#"><i class="fa fa-twitter-square"></i></a>
+								<a href="#"><i class="fa fa-instagram"></i></a>
 							</div>
 						</div>
 					</div>

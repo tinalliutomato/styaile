@@ -1,8 +1,8 @@
 /* Responsive Layout */
 /* Extra-small devices */
 @media (max-width: 767px) {
-  .copy {
-    text-align: center; }
+  p.video {
+    font-size: 1em; }
 
   .news .news_logo {
     display: block;
@@ -31,6 +31,7 @@
     padding: 0; }
 
   .copy {
+    text-align: center;
     margin-top: 5vh;
     margin-bottom: 5vh; }
     .copy .headline {
@@ -39,6 +40,14 @@
       margin-left: 1em; } }
 /* Small devices */
 @media (min-width: 768px) and (max-width: 991px) {
+  footer {
+    text-align: center; }
+    footer .download_rating {
+      display: inline-block; }
+      footer .download_rating .button, footer .download_rating .rating {
+        display: block;
+        vertical-align: middle; }
+
   .copy .headline {
     font-size: 2em; } }
 /* Medium-size devices */
