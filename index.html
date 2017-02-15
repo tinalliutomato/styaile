@@ -12,6 +12,10 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+	<!-- Javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
 </head>
 
 <body>
@@ -34,9 +38,31 @@
 		</div>
 
 		<div class="row">
-			<a id="play_video">
+			<video id="myvideo" height="0">
+			  <source src="videos/Styaile Prototype.mov"></source>
+			</video>
+			<button id="play_video" onclick="playPause()">
 				<img src="images/play.svg">
-			</a>
+			</button>
+			<!-- Play Video Full Screen -->
+			<script language="javascript">
+				var myVideo = document.getElementById('myvideo'); 
+
+				function playPause() { 
+				    //if (myVideo.paused) {
+				    	myVideo.play(); 
+						if (myVideo.requestFullscreen) {
+					      myVideo.requestFullscreen();
+					    } else if (myVideo.mozRequestFullScreen) {
+					      myVideo.mozRequestFullScreen();
+					    } else if (myVideo.webkitRequestFullscreen) {
+					      myVideo.webkitRequestFullscreen();
+					    }
+				    /*} else {
+					 	myVideo.pause(); 
+					}*/
+				}
+			</script>
 			<p class="video">Watch the video to<br>find out how it works</p>
 		</div>
 
