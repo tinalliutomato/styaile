@@ -10,6 +10,11 @@
 
   footer {
     text-align: center; }
+    footer .download_rating {
+      display: inline-block; }
+      footer .download_rating .button, footer .download_rating .rating {
+        display: block;
+        vertical-align: middle; }
 
   .center-block-xs {
     display: block;
@@ -21,6 +26,9 @@
   header .headline {
     margin-bottom: 13vh;
     font-size: 1.25em; }
+
+  .container, .col-xs-12 {
+    padding: 0; }
 
   .copy {
     margin-top: 5vh;

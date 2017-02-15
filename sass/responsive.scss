@@ -13,6 +13,13 @@
 	}
 	footer {
 		text-align: center;
+		.download_rating {
+			display: inline-block;
+			.button, .rating {
+				display: block;
+				vertical-align: middle;
+			}
+		}
 	}
 	.center-block-xs {
 		display: block;
@@ -27,6 +34,9 @@
 			margin-bottom: 13vh;
 			font-size: 1.25em;
 		}
+	}
+	.container, .col-xs-12 {
+		padding: 0;
 	}
 	.copy {
 		margin-top: 5vh;

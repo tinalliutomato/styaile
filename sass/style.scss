@@ -6,6 +6,7 @@ $light-grey: #ECECEC;
 $dark-grey: #757676;
 $navy: #454D64;
 $black: #3C3C3C;
+$star: #F1C40F;
 
 /* Fonts */
 @font-face {
@@ -62,7 +63,7 @@ header {
 
 .button {
 	display: inline-block;
-	height: 50px;
+	height: 40px;
 	width: 135px;
 	margin: 0.5em;
 
@@ -200,6 +201,24 @@ footer {
 		font-size: 4em;
 		letter-spacing: 0.25em;
 		opacity: 0.7;
+	}
+	.rating {
+		i.fa {
+			font-size: 2em;
+			letter-spacing: 0.2em;
+			color: $star;
+		    opacity: 1;
+		    text-shadow: 1px 1px rgba($black, 0.3);
+		    text-align: center;
+		    line-height: 40px;
+		}
+	}
+	.download_rating {
+		display: block;
+		.button, .rating {
+			display: inline-block;
+			vertical-align: middle;
+		}
 	}
 	.phone {
 		display: block;

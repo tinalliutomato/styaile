@@ -42,7 +42,7 @@ header {
 
 .button {
   display: inline-block;
-  height: 50px;
+  height: 40px;
   width: 135px;
   margin: 0.5em; }
   .button img {
@@ -152,6 +152,19 @@ footer {
     font-size: 4em;
     letter-spacing: 0.25em;
     opacity: 0.7; }
+  footer .rating i.fa {
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    color: #F1C40F;
+    opacity: 1;
+    text-shadow: 1px 1px rgba(60, 60, 60, 0.3);
+    text-align: center;
+    line-height: 40px; }
+  footer .download_rating {
+    display: block; }
+    footer .download_rating .button, footer .download_rating .rating {
+      display: inline-block;
+      vertical-align: middle; }
   footer .phone {
     display: block;
     position: absolute; }
@@ -173,6 +186,11 @@ footer {
 
   footer {
     text-align: center; }
+    footer .download_rating {
+      display: inline-block; }
+      footer .download_rating .button, footer .download_rating .rating {
+        display: block;
+        vertical-align: middle; }
 
   .center-block-xs {
     display: block;
@@ -184,6 +202,9 @@ footer {
   header .headline {
     margin-bottom: 13vh;
     font-size: 1.25em; }
+
+  .container, .col-xs-12 {
+    padding: 0; }
 
   .copy {
     margin-top: 5vh;
