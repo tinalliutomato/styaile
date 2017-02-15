@@ -60,6 +60,8 @@ header {
   margin: 2em auto 1em;
   width: 10vh;
   height: 10vh;
+  min-width: 60px;
+  min-height: 60px;
   background: transparent;
   border: 0; }
   #play_video img {
