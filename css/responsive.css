@@ -15,5 +15,13 @@
     display: block;
     margin: 0 auto; } }
 /* Medium-size devices */
+@media (min-width: 992px) {
+  footer #footer_main {
+    height: calc(500px - 2em); }
+
+  .pull-down-md {
+    position: absolute;
+    bottom: 0;
+    top: auto; } }
 
 /*# sourceMappingURL=responsive.css.map */

@@ -126,10 +126,14 @@ section {
   opacity: 0.5; }
 
 footer {
+  height: 500px;
   background: url(../images/hero_bg_raw.jpg) no-repeat center 70%;
   background-size: cover;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  overflow: hidden;
+  position: relative; }
   footer .overlay {
+    height: 100%;
     background-color: rgba(60, 60, 60, 0.4);
     background-image: url(../images/overlay.png);
     background-repeat: repeat;
@@ -140,6 +144,14 @@ footer {
     font-size: 4em;
     letter-spacing: 0.25em;
     opacity: 0.7; }
+  footer .phone {
+    display: block;
+    position: absolute; }
+  footer .phone#android {
+    margin-top: 2em;
+    margin-left: 10em; }
+  footer .phone#iphone {
+    margin-top: 15em; }
 
 /* Responsive Layout */
 /* Extra-small devices */
@@ -158,5 +170,13 @@ footer {
     display: block;
     margin: 0 auto; } }
 /* Medium-size devices */
+@media (min-width: 992px) {
+  footer #footer_main {
+    height: calc(500px - 2em); }
+
+  .pull-down-md {
+    position: absolute;
+    bottom: 0;
+    top: auto; } }
 
 /*# sourceMappingURL=style.css.map */

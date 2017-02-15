@@ -170,10 +170,15 @@ section {
 	}
 }
 footer {
+	height: 500px;
 	background: url(../images/hero_bg_raw.jpg) no-repeat center 70%;
 	background-size: cover;
 	color: $white;
+	overflow: hidden;
+	position: relative;
+
 	.overlay {
+		height: 100%;
 		background-color: rgba($black, 0.4);
 		background-image: url(../images/overlay.png);
 		background-repeat: repeat;
@@ -186,6 +191,17 @@ footer {
 		font-size: 4em;
 		letter-spacing: 0.25em;
 		opacity: 0.7;
+	}
+	.phone {
+		display: block;
+		position: absolute;
+	}
+	.phone#android {
+		margin-top: 2em;
+		margin-left: 10em;
+	}
+	.phone#iphone {
+		margin-top: 15em;
 	}
 }
 
