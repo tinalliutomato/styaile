@@ -8,7 +8,7 @@
   src: url(../fonts/Marmelad_Regular.ttf); }
 body {
   font-family: "Marmelad";
-  font-size: 1em; }
+  font-size: 1rem; }
 
 h1 {
   text-align: center; }
@@ -17,20 +17,24 @@ h1 {
   font-family: "Damion"; }
 
 header {
+  height: 90vh;
   background: url(../images/hero_bg_raw.jpg) no-repeat center 20%;
   background-size: cover;
   color: #FFFFFF;
   text-align: center; }
   header .hero {
+    height: 100%;
     background-color: rgba(60, 60, 60, 0.4);
     background-image: url(../images/overlay.png);
     background-repeat: repeat;
     padding: 1em; }
   header #logo {
-    margin: 8em auto 0;
+    margin: 10em auto 0;
     display: block; }
   header .headline {
-    font-size: 1.25em; }
+    margin-bottom: 10vh;
+    font-size: 1.25em;
+    line-height: 1.25; }
   header .accent_font {
     font-size: 1.75em; }
 
@@ -46,14 +50,14 @@ header {
 #play_video {
   display: block;
   margin: 2em auto 1em;
-  width: 62px;
-  height: 62px; }
+  width: 10vh;
+  height: 10vh; }
   #play_video img {
     width: 100%;
     height: 100%; }
 
 section {
-  padding: 3em 0;
+  padding: 5vh 0;
   border-bottom: 1px solid #ECECEC; }
 
 .mockup_outline {
@@ -69,8 +73,8 @@ section {
     position: relative; }
 
 .copy {
-  margin-top: 70px;
-  margin-bottom: 60px; }
+  margin-top: 10vh;
+  margin-bottom: 10vh; }
   .copy .em {
     width: 3em;
     height: 3em;
@@ -155,7 +159,7 @@ footer {
 
 /* Responsive Layout */
 /* Extra-small devices */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .copy {
     text-align: center; }
 
@@ -168,9 +172,19 @@ footer {
 
   .center-block-xs {
     display: block;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  header #logo {
+    margin-top: 20vh; }
+  header .headline {
+    margin-bottom: 13vh; }
+
+  .copy {
+    margin-top: 5vh;
+    margin-bottom: 5vh; } }
+/* Small devices */
 /* Medium-size devices */
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1119px) {
   footer #footer_main {
     height: calc(500px - 2em); }
 
@@ -178,5 +192,6 @@ footer {
     position: absolute;
     bottom: 0;
     top: auto; } }
+/* Large devices */
 
 /*# sourceMappingURL=style.css.map */

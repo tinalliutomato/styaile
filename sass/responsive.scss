@@ -1,7 +1,7 @@
 /* Responsive Layout */
 
 /* Extra-small devices */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.copy {
 		text-align: center;
 	}
@@ -18,10 +18,27 @@
 		display: block;
 		margin: 0 auto;
 	}
+	header {
+		#logo {
+			margin-top: 20vh;
+		}
+		.headline {
+			margin-bottom: 13vh;
+		}
+	}
+	.copy {
+		margin-top: 5vh;
+		margin-bottom: 5vh;
+	}
+}
+
+/* Small devices */
+@media (min-width: 768px) and (max-width: 991px) {
+	
 }
 
 /* Medium-size devices */
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1119px) {
 	footer {
 		#footer_main {
 			height: calc(500px - 2em);
@@ -32,4 +49,9 @@
 		bottom: 0;
 		top: auto;
 	}
+}
+
+/* Large devices */
+@media (min-width: 1200px) {
+	
 }

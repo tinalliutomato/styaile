@@ -1,6 +1,6 @@
 /* Responsive Layout */
 /* Extra-small devices */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .copy {
     text-align: center; }
 
@@ -13,9 +13,19 @@
 
   .center-block-xs {
     display: block;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  header #logo {
+    margin-top: 20vh; }
+  header .headline {
+    margin-bottom: 13vh; }
+
+  .copy {
+    margin-top: 5vh;
+    margin-bottom: 5vh; } }
+/* Small devices */
 /* Medium-size devices */
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1119px) {
   footer #footer_main {
     height: calc(500px - 2em); }
 
@@ -23,5 +33,6 @@
     position: absolute;
     bottom: 0;
     top: auto; } }
+/* Large devices */
 
 /*# sourceMappingURL=responsive.css.map */
