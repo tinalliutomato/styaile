@@ -33,6 +33,7 @@ h1 {
 
 header {
 	height: 90vh;
+	min-height: 500px;
 	background: url(../images/hero_bg_raw.jpg) no-repeat center 20%;
 	background-size: cover;
 	color: $white;
