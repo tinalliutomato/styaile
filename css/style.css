@@ -191,10 +191,10 @@ footer {
     display: block;
     position: absolute; }
   footer .phone#android {
-    margin-top: 2em;
+    margin-top: 3em;
     margin-left: 10em; }
   footer .phone#iphone {
-    margin-top: 15em; }
+    margin-top: 10em; }
 
 /* Responsive Layout */
 /* Extra-small devices */
